@@ -125,6 +125,13 @@ Skip it when you have:
 - The extractor handles two header styles and optional metadata fields. Wildly inconsistent or multi-language source data would need a more sophisticated extraction layer.
 - Lint performance is I/O-bound and platform-sensitive; expect Windows to run measurably slower than Linux at scale, likely due to filesystem overhead and antivirus scanning.
 
+## Related Reading
+
+- [Coding Agents Don't Need Longer History — They Need Intent Continuity](https://towardsdatascience.com/coding-agents-dont-need-longer-history-they-need-intent-continuity/) — the full write-up this repo accompanies
+- [context-engine](https://github.com/Emmimal/context-engine) — a related but distinct problem: managing what enters an LLM's context window (retrieval, re-ranking, memory decay, token budgets), rather than verifying whether retrieved history is still valid
+- [Context Windows Don’t Know What’s Still True — I Built a Validity Layer That Does](https://towardsdatascience.com/context-windows-dont-know-whats-still-true-i-built-a-validity-layer-that-does/) — the full write-up
+- [Changing One Prompt Can Affect 50 Others — I Built a Prompt Dependency Graph to Find What Needs Retesting](https://towardsdatascience.com/changing-one-prompt-can-affect-50-others-i-built-a-prompt-dependency-graph-to-find-what-needs-retesting/) — the full write-up
+
 ## License
 
 MIT
